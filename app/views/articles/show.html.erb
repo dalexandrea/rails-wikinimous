@@ -1,0 +1,15 @@
+<h1><%= @task.title %>
+  <small>
+    <%= link_to
+    <i class="fa fa-pencil">
+    </i>
+    , edit_task_path(@task) %>
+    <%= link_to
+    <i class="fa fa-trash-o">
+    </i>
+    , task_path(@task), method: :delete %>
+  </small>
+</h1>
+<p>
+  <%= @task.content %>
+</p>
